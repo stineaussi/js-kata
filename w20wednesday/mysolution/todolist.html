@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="Speak.js"></script>
+    <title>To-do list</title>
+</head>
+<body>
+    <h1>My To-do list</h1>
+    <ul>
+        <li>Pick up the kids</li>
+        <li>Buy milk</li>
+        <li>Do some JavaScript</li>
+        <li>Feed the kids</li>
+        <li>Look at the hsl color format</li>
+        <li>Ignore the kids</li>
+        <li>Feed the cat</li>
+    </ul>
+    <button>Press me :-)</button>
+
+    <script>
+        let speech = new Speak();
+    document.querySelector("button").addEventListener("click",e=>{
+        speech.setVoice(51)
+        speech.speak("Buy milk")
+        speech.speak("Do some JavaScript")
+        speech.speak("Look at the hsl color format")
+        speech.speak("Feed the cat")
+        //console.log(speech.getVoices(true))
+    })
+    </script>
+
+</body>
+</html>
