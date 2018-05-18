@@ -24,6 +24,7 @@
         let speech = new Speak();
     document.querySelector("button").addEventListener("click",e=>{
         speech.setVoice(51)
+        //speech.speak(document.querySelector("ul").textContent)
         speech.speak("Buy milk")
         speech.speak("Do some JavaScript")
         speech.speak("Look at the hsl color format")
